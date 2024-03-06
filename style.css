@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #a09494;
+}
+
+.container {
+  max-width: 601px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgb(218, 202, 202);
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: 0 0 10px rgb(2, 2, 2);
+}
+
+.form {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+#input {
+  width: 76%;
+  font-weight: bold;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease;
+}
+
+#input:hover {
+  box-shadow: 0 0 5px rgb(2, 2, 2);
+}
+
+.btn {
+  padding: 10px 20px;
+  font-weight: 600;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  transition: box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  /* background-color: #0056b3 0.3s; */
+  box-shadow: 0 0 5px rgb(2, 2, 2);
+}
+
+.result {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.result button {
+  margin-top: 10px;
+}
+
+.result video {
+  max-width: 100%; /* Ensure video doesn't exceed its container */
+  max-height: 100vh; /* Limiting the video's height to the viewport height */
+  display: block;
+  margin: 0 auto; /* Centering the video horizontally */
+}
+
+.result p {
+  font-weight: bold;
+}
+
+/* Existing CSS styles remain unchanged */
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.hide-btn {
+  display: none;
+  margin-right: 441px;
+  transition: box-shadow 0.3s ease;
+}
+
+.hide-btn:hover {
+  box-shadow: 0 0 5px rgb(2, 2, 2);
+}
+
+#name {
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    /* Apply styles for smaller screens */
+    .container {
+      padding: 10px;
+    }
+
+    #input {
+      width: 100%; /* Full width on smaller screens */
+    }
+
+    .btn {
+      margin-right: 0; /* No margin on smaller screens */
+      margin-bottom: 10px; /* Add margin-bottom for spacing */
+      width: 100%; /* Full width on smaller screens */
+    }
+
+    .hide-btn {
+      margin-right: 0; /* No margin on smaller screens */
+      width: 100%; /* Full width on smaller screens */
+    }
+}
